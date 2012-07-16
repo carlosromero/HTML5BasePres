@@ -9,7 +9,16 @@ $(document).ready(function(){
        $(first).next().show("fast");
         
    }); 
+   ///XML
+    $("p.code-xml").each(function(index,element){
+       var codigo = $(element).html();
+       var pre = '<script type="syntaxhighlighter" class="brush: xml;toolbar: false"><![CDATA[';
+       var fin = ']]></script>';
+       ///console.log(pre+codigo+fin);
+       $(element).after(pre+codigo+fin);
+    });
     
+    //PHP
     $("p.code").each(function(index,element){
        var codigo = $(element).html();
        var pre = '<div class="send-console">Send</div><script type="syntaxhighlighter" class="brush: php;toolbar: false"><![CDATA[';
@@ -18,9 +27,7 @@ $(document).ready(function(){
        $(element).after(pre+codigo+fin);
     });
     
-     SyntaxHighlighter.all()
-    //añado boton para enviar a mi debugger
-    
+    //add button to send to wysiwyg code interpreter
     $(".send-console").click(function(){
         var code = $(this).prev();
         code = $('<a />').html(code).text();
@@ -28,6 +35,10 @@ $(document).ready(function(){
         $("#code-php-button").click();
         //my_save("",'<?php '+code+'?>');
     });
+    
+    
+     SyntaxHighlighter.all()
+   
     
     
     

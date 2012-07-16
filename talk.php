@@ -79,12 +79,8 @@
 <!-- Include required JS files -->
 <script type="text/javascript" src="js/syntaxhighlighter/scripts/shCore.js"></script>
  
-<!--
-    At least one brush, here we choose JS. You need to include a brush for every 
-    language you want to highlight
--->
 <script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushPhp.js"></script>
- 
+<script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushXml.js"></script> 
 
 
 </body>

@@ -291,7 +291,7 @@ ul.lista li{
     padding:10px 10px;
 }
 
-p.code{
+p.code, p.code-xml{
     display:none;
 }
 .send-console{

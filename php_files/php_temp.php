@@ -1,10 +1,8 @@
 <?php 
-    $a = 1;
-    echo $a++; //devuelve 1, $a vale 2
-    echo ++$a; //devuelve 3, $a vale 3
-    echo --$a; //devuelve 2, $a vale 2
-    echo $a--; //devuelve 2, $a vale 1
-    echo $a;
-    $a = 'Test';
-    echo ++$a;
-?>
+    $ex["octal1"] = 0755;
+    $ex["octal2"] = 0777;
+    $ex["hexa1"] = 0x123;
+    $ex["hexa2"] = 0XFF;
+   foreach($ex as $key => $value){
+    echo $key. ":" .$value."";
+   }
