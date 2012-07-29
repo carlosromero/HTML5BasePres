@@ -56,18 +56,22 @@ $(document).ready(function(){
        $("#code-php").hide();
        
     });
-
+    //calculate optimus width
+    var opWidth = ($("body").width()/2)-10;
+    console.log(opWidth);
     editAreaLoader.init({
 	id : "textarea_1"		// textarea id
 	,syntax: "php"			// syntax to be uses for highgliting
 	//,start_highlight: true
-        ,min_width: "670"
-        ,min_height: "170"
+        ,min_width: opWidth
+        //,min_height: "170"
+        ,allow_toggle: true
         ,toolbar: " load, save , search, go_to_line, |, undo, redo, |, select_font, |, change_smooth_selection, highlight, reset_highlight, |, help"
 	,save_callback: "my_save"
         ,load_callback: "my_load"
         ,allow_resize: "x"
-        ,display: "onload"
+        ,display: "later"
+        //,display: "onload"
         ,start_highlight: true
     });
 ///fin editor    

@@ -305,3 +305,12 @@ p.code, p.code-xml{
 #container{
     width: 100% !important;
 }
+
+.api{
+    border: solid 2px #CCC;
+border-collapse: collapse;
+margin: 0.5em;
+padding: 0.5em;
+background-color: #EEF;
+font-size:17px;
+}
