@@ -36,8 +36,11 @@ THe code inside the slides are simple html, with some goodies:
 * ul class lista - will create a list hidden by default but if you click on it the rest of the lis will appear
 * p class code - will highlight a php code and create a button to send to the editor, if you save this code in the editor, will appear in the left at the console system.
 * p class api- Shows api box
-* printr function in php to show prefixed with pre var_dump
 
+PHP functions for helping formatting in the little console:
+
+* printr(var) show prefixed with pre var_dump(var)
+* br(num) echo "num" breaklines  
 
 TODO:
 ------

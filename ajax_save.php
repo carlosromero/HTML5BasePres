@@ -3,7 +3,8 @@
 //injects a simple function to pre code
 $content = $_POST["content"];
 
-$pretty = "function printr(\$data, \$exit = FALSE) {
+$pretty = "
+function printr(\$data, \$exit = FALSE) {
   if (\$data) {
     print '<pre>';
     print_r(\$data);
@@ -12,7 +13,13 @@ $pretty = "function printr(\$data, \$exit = FALSE) {
   if (\$exit) {
     exit;
   }
-}";
+}
+function br(\$num = 1){
+    for(\$i=0;\$i<\$num;\$i++){
+        echo '<br />';
+    }
+}
+";
 
 if(stristr($content,"?>")) $content = str_replace("?>",$pretty." ?>",$content);
 else $content = $content.$pretty;    
