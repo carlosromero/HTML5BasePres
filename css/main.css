@@ -284,7 +284,7 @@ bottom:0px;
     width:49%;
 }
 
-ul.lista{
+ul.lista, ul.lista-fija{
     list-style:disc;
 }
 ul.lista li{
@@ -313,4 +313,13 @@ margin: 0.5em;
 padding: 0.5em;
 background-color: #EEF;
 font-size:17px;
+}
+h3{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 25px 0;
+
+}
+p{
+    margin: 25px 0;
 }
